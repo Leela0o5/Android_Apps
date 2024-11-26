@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+
+    <ImageView
+        android:id="@+id/Planetimage"
+        android:layout_width="61dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/planetname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/planetname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="13dp"
+        android:text="Planet name"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/Moon"
+        app:layout_constraintEnd_toStartOf="@+id/Moon"
+        app:layout_constraintStart_toEndOf="@+id/Planetimage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/moon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="0"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Moon"
+        app:layout_constraintStart_toStartOf="@+id/planetname"
+        app:layout_constraintTop_toTopOf="@+id/Moon" />
+
+    <TextView
+        android:id="@+id/Moon"
+        android:layout_width="87dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="9dp"
+        android:text="Moons"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/planetname"
+        app:layout_constraintTop_toBottomOf="@+id/planetname" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
